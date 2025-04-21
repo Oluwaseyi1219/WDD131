@@ -1,0 +1,54 @@
+/* Base styles */
+body {
+    font-size: 20px;
+    font-family: "Times New Roman", Times, serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Layout */
+header, main, footer {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Typography */
+h1, h2 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+h1 {
+    margin-bottom: 0;
+}
+
+h2 {
+    color: #006EB6;
+    margin-top: 10px;
+}
+
+/* Content */
+main {
+    line-height: 1.5;
+    margin-top: 20px;
+}
+
+main p, main ul {
+    text-align: left;
+}
+
+main ul {
+    padding-left: 20px;
+}
+
+main li {
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer img {
+    width: 150px;
+    margin: 20px 0;
+} 

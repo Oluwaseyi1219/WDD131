@@ -1,0 +1,18 @@
+# macOS files
+.DS_Store
+
+# Nested git repository
+WDD-131/
+
+# Node modules
+node_modules/
+
+# Logs
+*.log
+
+# Environment variables
+.env
+.env.local
+.env.development
+.env.test
+.env.production 
