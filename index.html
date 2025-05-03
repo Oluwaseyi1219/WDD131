@@ -7,11 +7,16 @@
     <meta name="author" content="Oluwaseyi Omowole">
     <title>BYU-Idaho Mission Statement</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- Using PNG logo for better compatibility -->
 </head>
 <body>
     <header>
         <h1>BRIGHAM YOUNG UNIVERSITY-IDAHO</h1>
         <h2>MISSION STATEMENT</h2>
+        <select id="themeSelector">
+            <option value="light">Light Theme</option>
+            <option value="dark">Dark Theme</option>
+        </select>
     </header>
     
     <main>
@@ -27,7 +32,9 @@
     </main>
     
     <footer>
-        <img src="byui-logo_blue.webp" alt="BYU-Idaho logo">
+        <img src="byui-logo_blue.webp" alt="BYU-Idaho logo" id="logo">
     </footer>
+    
+    <script src="mission.js" defer></script>
 </body>
-</html>
+</html> 
