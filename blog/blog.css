@@ -1,0 +1,127 @@
+/* General Styles */
+:root {
+    --gold: #EFC69B;
+    --red: #AF1B3F;
+    --dark: #473144;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: var(--dark);
+}
+
+h1, h2 {
+    font-family: 'Lora', Impact, serif;
+}
+
+a {
+    color: var(--red);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Skip to content link */
+.skiptocontent a {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: var(--red);
+    color: white;
+    padding: 8px;
+    z-index: 100;
+}
+
+.skiptocontent a:focus {
+    top: 0;
+}
+
+/* Header Styles */
+header {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Navigation Grid */
+nav ul {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    justify-content: end;
+    justify-items: end;
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 800px;
+    border-top: 1px solid var(--gold);
+    border-bottom: 1px solid var(--gold);
+    padding: 1rem 0;
+}
+
+nav ul li {
+    font-size: 1.2rem;
+}
+
+/* Main Content Grid */
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Article Grid */
+article {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.article-details {
+    color: var(--red);
+}
+
+.article-details time {
+    font-size: 1.2rem;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.article-content img {
+    max-width: 200px;
+    height: auto;
+    margin: 1rem 0;
+}
+
+/* Filters Section */
+.filters {
+    background-color: var(--gold);
+    padding: 2rem 1.5rem;
+    border-radius: 8px;
+    min-height: 350px;
+    box-shadow: 0 4px 16px rgba(71, 49, 68, 0.08);
+    display: flex;
+    align-items: flex-start;
+    font-size: 1.1rem;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: var(--dark);
+    color: white;
+    margin-top: 2rem;
+} 
