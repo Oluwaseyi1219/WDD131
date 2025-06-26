@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camp Registration Form</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <form id="registration-form">
+        <h1>Camp Registration Form</h1>
+        
+        <fieldset>
+            <legend>Adult Information</legend>
+            <div class="form-group">
+                <label for="adult-name">Name:</label>
+                <input type="text" id="adult-name" name="adult-name" required>
+            </div>
+            <div class="form-group">
+                <label for="adult-email">Email:</label>
+                <input type="email" id="adult-email" name="adult-email" required>
+            </div>
+            <div class="form-group">
+                <label for="adult-phone">Phone:</label>
+                <input type="tel" id="adult-phone" name="adult-phone" required>
+            </div>
+        </fieldset>
+
+        <fieldset id="participants">
+            <legend>Participants</legend>
+            <section class="participant1">
+                <div class="form-group">
+                    <label for="name1">Name:</label>
+                    <input type="text" id="name1" name="name1" required>
+                </div>
+                <div class="form-group">
+                    <label for="age1">Age:</label>
+                    <input type="number" id="age1" name="age1" min="5" max="18" required>
+                </div>
+                <div class="form-group">
+                    <label for="fee1">Fee:</label>
+                    <input type="number" id="fee1" name="fee1" min="0" step="0.01" required>
+                </div>
+            </section>
+            <button type="button" id="add-participant">Add Another Participant</button>
+        </fieldset>
+
+        <button type="submit" id="submit">Submit Registration</button>
+    </form>
+
+    <div id="summary" class="hide">
+        <!-- Summary will be inserted here -->
+    </div>
+
+    <script src="register.js"></script>
+</body>
+</html> 

@@ -33,4 +33,7 @@ coverage/
 
 # Temporary folders
 tmp/
-temp/ 
+temp/
+
+# Environment variables
+.env
