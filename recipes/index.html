@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Book - Delicious Recipes for Every Occasion</title>
+    <meta name="description" content="Discover delicious recipes for every occasion. From quick weeknight meals to special occasion dishes, find your next favorite recipe.">
+    
+    <!-- Social Media Meta Tags -->
+    <meta property="og:title" content="Recipe Book - Delicious Recipes for Every Occasion">
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="Discover delicious recipes for every occasion. From quick weeknight meals to special occasion dishes, find your next favorite recipe.">
+    <meta property="og:image" content="images/recipe-book.png">
+    <meta property="og:url" content="https://yourdomain.com/index.html">
+    <meta name="twitter:card" content="summary_large_image">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="recipes.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="images/recipe-book.png" alt="Recipe Book Logo" class="logo">
+            <h1>Recipe Book</h1>
+        </div>
+    </header>
+
+    <main>
+        <section class="search-section">
+            <form class="search-form">
+                <input type="text" placeholder="Search recipes..." aria-label="Search recipes">
+                <button type="submit" aria-label="Search">Search</button>
+            </form>
+        </section>
+
+        <section class="recipe-section">
+            <article class="recipe-card">
+                <img src="images/pasta-carbonara.jpg" alt="Pasta Carbonara" class="recipe-image">
+                <div class="recipe-content">
+                    <h2>Pasta Carbonara</h2>
+                    <div class="recipe-meta">
+                        <span class="cook-time">⏱️ 30 minutes</span>
+                        <span class="difficulty">👨‍🍳 Easy</span>
+                    </div>
+                    <div class="rating">
+                        <span
+                            class="rating"
+                            role="img"
+                            aria-label="Rating: 4 out of 5 stars"
+                        >
+                            <span aria-hidden="true" class="icon-star">⭐</span>
+                            <span aria-hidden="true" class="icon-star">⭐</span>
+                            <span aria-hidden="true" class="icon-star">⭐</span>
+                            <span aria-hidden="true" class="icon-star">⭐</span>
+                            <span aria-hidden="true" class="icon-star-empty">☆</span>
+                        </span>
+                    </div>
+                    <p class="recipe-description">
+                        A classic Italian pasta dish made with eggs, cheese, pancetta, and black pepper. 
+                        This creamy and flavorful dish is perfect for a quick weeknight dinner.
+                    </p>
+                    <div class="recipe-tags">
+                        <span class="tag">Italian</span>
+                        <span class="tag">Pasta</span>
+                        <span class="tag">Quick</span>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="social">
+                <!-- Social media icons provided under CC from https://www.iconfinder.com/AlfredoCreates  -->
+                <a href="#" aria-label="Follow us on Instagram"><img src="images/instagram_icon.svg" alt="instagram icon"></a>
+                <a href="#" aria-label="Follow us on YouTube"><img src="images/youtube_icon.svg" alt="youtube icon"></a>
+                <a href="#" aria-label="Follow us on Pinterest"><img src="images/pinterest_icon.svg" alt="pinterest icon"></a>
+            </div>
+            <div class="attribution">
+                <a href="https://www.flaticon.com/free-icons/recipe" title="recipe icons">Recipe icons created by Freepik - Flaticon</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html> 
