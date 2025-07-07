@@ -1,22 +1,154 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Recipe Book</title>
-  <link rel="stylesheet" href="styles.css" />
+    <meta charset="utf-8">
+    <title>Site Plan</title>
+    <link type="text/css" rel="stylesheet" href="portfolio-site/styles/site-plan.css">
 </head>
 <body>
-  <header>
-    <h1>Recipe Book</h1>
-    <form id="search-form">
-      <input type="text" id="search-input" placeholder="Search recipes..." />
-      <button type="submit" id="search-btn">Search</button>
-    </form>
-  </header>
-  <main>
-    <section id="recipes-container"></section>
-  </main>
-  <script src="main.js" type="module"></script>
+    <header>
+        <h1>DevPortfolio Pro Site Plan</h1>
+        <h2>Oluwaseyi Peter Omowole</h2>
+        <h2>WDD 131</h2>
+        <!-- In the header above, add the name of your site, your name and class number. For example if the name of your site is "My Amazing Site", then put that in the site name. Do not add your real name, use a pseudonym or initials.-->
+    </header>
+    <main>
+        <hr>
+        <h2>Overview</h2>
+        <h3>Purpose</h3>
+        <p>DevPortfolio Pro is a professional showcase platform designed to highlight web development skills, projects, and technical expertise. This site serves as a comprehensive portfolio and blog where visitors can explore interactive project demonstrations, read technical articles, and learn about modern web development practices through real-world examples.</p>
+
+        <h3>Audience</h3>
+        <p>The primary audience includes potential employers, clients, fellow developers, and students interested in web development. These visitors are seeking to evaluate technical skills, view project demonstrations, and gain insights into modern development practices. They value clean code, responsive design, and innovative solutions to common web development challenges.</p>
+
+        <h3>Dynamic Elements</h3>
+        <p>The site will feature extensive JavaScript functionality including: a dynamic project filter system using array methods (filter, map, reduce) to sort projects by technology stack; an interactive blog with search capabilities and tag filtering; a contact form with real-time validation and conditional error messaging; a theme switcher with localStorage persistence; project showcase with modal galleries; and a skills progress animation system. All features will utilize ES6 modules for organized code structure, object-oriented programming for data management, and comprehensive DOM manipulation with event listeners for user interactions.</p>
+
+        <hr>
+        <h2>Branding</h2>
+        <h3>Website Logo</h3>
+        <!-- Replace this with some sort of logo for your site. A logo can be as simple as the name of your site in a nice font. Use a placeholder for now. -->
+        <img src="https://via.placeholder.com/200x100?text=DevPortfolio+Pro" alt="DevPortfolio Pro Logo">
+        <hr>
+        <h2>Style Guide</h2>
+
+        <!-- ------------------------Steps 6-9------------------------------ -->
+
+        <h3>Color Palette</h3>
+        <!--  The colors you choose for a website are one of the most important decisions you will make. Follow the instructions on the activity in iLearn then return and replace the color codes below with the hex color codes (the 6 digit numbers that show at the bottom of each color) for the colors you have chosen below.  You should have at least 2 colors but do not have to fill in all 4 if you do not need them.  -->
+
+        <!-- Copy the URL of the image from the completed palette and paste it below. Replace the href value that is there with yours. Do this for both the Coolors URL and the Adobe Color URL. Make sure to keep the https:// part! -->
+
+        <p>Palette URL:</p>
+        <a href="https://coolors.co/2d3748-4a5568-ed8936-f7fafc" target="_blank">https://coolors.co/2d3748-4a5568-ed8936-f7fafc</a>
+
+        <table class="colors">
+            <tr>
+                <th>Primary</th>
+                <th>Secondary</th>
+                <th>Accent 1</th>
+                <th>Accent 2</th>
+            </tr>
+            <!-- Replace the numbers in the boxes below with your hex color codes. Then switch to the site-plan.css file and change your colors there as well. -->
+            <tr>
+                <td class="primary">#2D3748</td>
+                <td class="secondary">#4A5568</td>
+                <td class="accent1">#ED8936</td>
+                <td class="accent2">#F7FAFC</td>
+            </tr>
+        </table>
+
+        <!-- ------------------------Steps 10-12------------------------------ -->
+
+        <h3>Typography</h3>
+        <!-- Choose a font for your paragraphs (body copy) and headlines. What font(s) have you chosen? Think also about which of your colors above you might use for background and font colors. -->
+
+        <h4>Heading Font: Inter</h4>
+        <h4>Paragraph Font: Source Sans Pro</h4>
+
+        <h3>Normal paragraph example</h3>
+        <p>
+            The DevPortfolio Pro showcases modern web development skills through interactive projects and technical articles. This platform demonstrates expertise in JavaScript, CSS, HTML, and various frameworks while providing valuable insights into contemporary development practices and industry standards.
+        </p>
+        <h3>Colored paragraph example</h3>
+        <p class="colored">
+            From responsive design implementations to complex JavaScript applications, every project in this portfolio reflects a commitment to clean code, user experience, and technical excellence. The blog section offers tutorials and insights that help fellow developers learn and grow in their careers.
+        </p>
+
+        <!-- ------------------------Step 13------------------------------ -->
+
+        <h3>Navigation</h3>
+        <!-- Think about how you want your navigation to look. In the site-plan.css file change the colors to your colors to get the look you desire. -->
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Projects</a>
+            <a href="#">Blog</a>
+            <a href="#">Contact</a>
+        </nav>
+        <hr>
+        <h2>Site Map</h2>
+        <div class="sitemap">
+            <div class="sm-home">Home</div>
+            <div class="sm-page2">Projects</div>
+            <div class="sm-page3">Blog</div>
+            <div class="sm-page4">Contact</div>
+
+            <div class="top">&nbsp;</div>
+            <div class="left">&nbsp;</div>
+            <div class="right">&nbsp;</div>
+        </div>
+        <hr>
+        <h2>Content</h2>
+        <h3>Home page</h3>
+        <p>
+            <strong>Hero Section:</strong> "Full-Stack Developer & Creative Problem Solver" - A compelling introduction with animated typing effect and call-to-action buttons.<br>
+            <strong>About Section:</strong> Professional summary highlighting expertise in modern web technologies, problem-solving approach, and passion for creating user-centered digital experiences.<br>
+            <strong>Featured Projects:</strong> Showcase of 3-4 best projects with interactive hover effects, technology tags, and quick preview functionality.<br>
+            <strong>Skills Overview:</strong> Animated progress bars showing proficiency in HTML, CSS, JavaScript, React, Node.js, and other relevant technologies.<br>
+            <strong>Latest Blog Posts:</strong> Recent articles with engaging thumbnails and brief excerpts to drive traffic to the blog section.
+        </p>
+        
+        <h3>Projects Page</h3>
+        <p>
+            <strong>Project Gallery:</strong> Interactive grid layout featuring all projects with filter functionality by technology stack (React, Vanilla JS, CSS, etc.).<br>
+            <strong>Project Details:</strong> Each project includes screenshots, live demo links, GitHub repositories, technology stack used, challenges overcome, and lessons learned.<br>
+            <strong>Case Studies:</strong> Detailed breakdowns of development process, problem-solving approach, and technical decisions for major projects.<br>
+            <strong>Project Search:</strong> Dynamic search functionality to find projects by name, technology, or keywords.<br>
+            <strong>Interactive Features:</strong> Modal galleries, before/after comparisons, and responsive design demonstrations.
+        </p>
+
+        <h3>Blog Page</h3>
+        <p>
+            <strong>Article Library:</strong> Collection of technical articles about web development, tutorials, and industry insights.<br>
+            <strong>Content Categories:</strong> JavaScript tips, CSS techniques, React development, performance optimization, and web design principles.<br>
+            <strong>Search & Filter:</strong> Tag-based filtering system and search functionality to help visitors find relevant content quickly.<br>
+            <strong>Article Features:</strong> Code syntax highlighting, interactive examples, and social sharing buttons.<br>
+            <strong>Reader Engagement:</strong> Comment system, article ratings, and related post suggestions to increase user engagement.
+        </p>
+
+        <h3>Contact Page</h3>
+        <p>
+            <strong>Contact Form:</strong> Professional contact form with real-time validation, including fields for name, email, project type, and detailed message.<br>
+            <strong>Professional Information:</strong> Email address, LinkedIn profile, GitHub profile, and professional social media links.<br>
+            <strong>Availability Status:</strong> Current availability for freelance projects or full-time opportunities with dynamic status updates.<br>
+            <strong>Response Promise:</strong> Clear expectations about response time and preferred communication methods.<br>
+            <strong>Location Info:</strong> General location information and timezone for potential collaboration considerations.
+        </p>
+
+        <hr>
+        <h2>Wireframes</h2>
+        
+        <h3>Home</h3>
+        <p>
+            The home page wireframe features a clean, modern layout with a hero section at the top, followed by about, featured projects, skills, and latest blog posts sections arranged in a single-column responsive design.
+        </p>
+        <img src="https://via.placeholder.com/800x600?text=Home+Page+Wireframe%0A%0AHeader+%7C+Navigation%0A%0AHero+Section%0A%0AAbout+Section%0A%0AFeatured+Projects+Grid%0A%0ASkills+Overview%0A%0ALatest+Blog+Posts%0A%0AFooter" alt="Home page wireframe">
+
+        <h3>Projects Page</h3>
+        <p>
+            The projects page wireframe showcases a filterable grid layout with search functionality at the top, followed by project cards in a responsive grid that adapts to different screen sizes.
+        </p>
+        <img src="https://via.placeholder.com/800x600?text=Projects+Page+Wireframe%0A%0AHeader+%7C+Navigation%0A%0AFilter+%26+Search+Bar%0A%0AProject+Grid+Layout%0A%0A%5BProject+Card%5D+%5BProject+Card%5D%0A%0A%5BProject+Card%5D+%5BProject+Card%5D%0A%0APagination%0A%0AFooter" alt="Projects page wireframe">
+    </main>
 </body>
-</html>
+</html> 
