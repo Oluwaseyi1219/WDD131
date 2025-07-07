@@ -135,6 +135,26 @@ portfolio-site/
 - **Interactive Demos**: Live coding examples
 - **Client Portal**: Project collaboration features
 
+## 👨‍💻 Developer Information
+
+**Developer**: Oluwaseyi Peter Omowole  
+**Course**: WDD 131  
+**Project**: Personal Web Application Site Plan  
+**Repository**: [GitHub - WDD131](https://github.com/Oluwaseyi1219/WDD131)
+
+## 📅 Site Plan Components
+
+This site plan includes all required elements:
+
+1. **✅ Purpose Statement**: Clear explanation of site goals
+2. **✅ Audience Definition**: Target user identification
+3. **✅ Dynamic Elements**: Comprehensive JavaScript features
+4. **✅ Logo/Branding**: Professional visual identity
+5. **✅ Color Scheme**: Modern, accessible color palette
+6. **✅ Typography**: Professional font selections
+7. **✅ Content Strategy**: Detailed page content plans
+8. **✅ Wireframes**: Visual layout specifications
+
 ---
 
 This site plan provides a comprehensive roadmap for creating a professional, technically impressive portfolio website that demonstrates advanced web development skills while serving as a valuable professional tool. 
