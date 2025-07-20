@@ -1,22 +1,244 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Recipe Book</title>
-  <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevPortfolio Pro - Oluwaseyi Peter Omowole</title>
+    <meta name="description" content="Professional portfolio showcasing web development skills, projects, and technical expertise. Full-stack developer specializing in modern web technologies.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 </head>
 <body>
-  <header>
-    <h1>Recipe Book</h1>
-    <form id="search-form">
-      <input type="text" id="search-input" placeholder="Search recipes..." />
-      <button type="submit" id="search-btn">Search</button>
-    </form>
-  </header>
-  <main>
-    <section id="recipes-container"></section>
-  </main>
-  <script src="main.js" type="module"></script>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h1>DevPortfolio Pro</h1>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link active">Home</a></li>
+                    <li><a href="projects/index.html" class="nav-link">Projects</a></li>
+                    <li><a href="blog/index.html" class="nav-link">Blog</a></li>
+                    <li><a href="contact/index.html" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="nav-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                    <span class="theme-icon">🌙</span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <h1 class="hero-title">
+                        <span class="hero-greeting">Hello, I'm</span>
+                        <span class="hero-name">Oluwaseyi Peter Omowole</span>
+                        <span class="hero-role">Full-Stack Developer & Creative Problem Solver</span>
+                    </h1>
+                    <p class="hero-description">
+                        I create modern, responsive web applications that deliver exceptional user experiences. 
+                        Specializing in JavaScript, React, Node.js, and cutting-edge web technologies.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="projects/index.html" class="btn btn-primary">View My Work</a>
+                        <a href="contact/index.html" class="btn btn-secondary">Get In Touch</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="images/hero-developer.jpg" alt="Oluwaseyi Peter Omowole - Web Developer" class="hero-img">
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about" id="about">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>
+                            I'm a passionate web developer with expertise in creating modern, scalable web applications. 
+                            My journey in web development started with a curiosity about how websites work, and has evolved 
+                            into a deep understanding of both front-end and back-end technologies.
+                        </p>
+                        <p>
+                            I believe in writing clean, maintainable code and creating user-centered digital experiences 
+                            that solve real problems. Every project I work on is an opportunity to learn, grow, and push 
+                            the boundaries of what's possible on the web.
+                        </p>
+                        <div class="about-stats">
+                            <div class="stat">
+                                <span class="stat-number" data-target="15">0</span>
+                                <span class="stat-label">Projects Completed</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number" data-target="3">0</span>
+                                <span class="stat-label">Years Experience</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number" data-target="100">0</span>
+                                <span class="stat-label">Happy Clients</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-image">
+                        <img src="images/about-me.jpg" alt="Oluwaseyi Peter Omowole working on web development" class="about-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills" id="skills">
+            <div class="container">
+                <h2 class="section-title">Skills & Technologies</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Frontend</h3>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <span class="skill-name">HTML5</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="95"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">CSS3</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="90"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">JavaScript</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="88"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">React</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="85"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Backend</h3>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <span class="skill-name">Node.js</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="82"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Express.js</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="80"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">MongoDB</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="75"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Git</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="90"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Projects Section -->
+        <section class="featured-projects" id="projects">
+            <div class="container">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="projects-grid" id="projectsGrid">
+                    <!-- Projects will be dynamically loaded here -->
+                </div>
+                <div class="projects-cta">
+                    <a href="projects/index.html" class="btn btn-primary">View All Projects</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Latest Blog Posts Section -->
+        <section class="latest-posts" id="blog">
+            <div class="container">
+                <h2 class="section-title">Latest Blog Posts</h2>
+                <div class="posts-grid" id="postsGrid">
+                    <!-- Blog posts will be dynamically loaded here -->
+                </div>
+                <div class="posts-cta">
+                    <a href="blog/index.html" class="btn btn-secondary">Read All Posts</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact CTA Section -->
+        <section class="contact-cta">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Ready to Start Your Project?</h2>
+                    <p>Let's work together to bring your ideas to life. I'm always excited to take on new challenges and create amazing digital experiences.</p>
+                    <a href="contact/index.html" class="btn btn-primary">Get In Touch</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>DevPortfolio Pro</h3>
+                    <p>Creating exceptional web experiences with modern technologies and clean code.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="projects/index.html">Projects</a></li>
+                        <li><a href="blog/index.html">Blog</a></li>
+                        <li><a href="contact/index.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="https://github.com/Oluwaseyi1219" target="_blank" rel="noopener noreferrer" aria-label="GitHub">GitHub</a>
+                        <a href="https://linkedin.com/in/oluwaseyi-omowole" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">LinkedIn</a>
+                        <a href="mailto:oluwaseyi@example.com" aria-label="Email">Email</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Oluwaseyi Peter Omowole. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script type="module" src="js/main.js"></script>
 </body>
-</html>
+</html> 
